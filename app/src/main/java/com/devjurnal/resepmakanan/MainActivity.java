@@ -30,16 +30,18 @@ public class MainActivity extends AppCompatActivity {
 
         ResepModel resep3 = new ResepModel();
         ResepModel resep4 = new ResepModel();
-        ResepModel resep5 = new ResepModel();
+
 
 
         // TODO 5. Masukkan data ke List
-        for (int i=0; i< 20; i++) {
+        for (int i=0; i< 5; i++) {
             ResepModel resep1 = new ResepModel();
             resep1.setJudul("Olahan Cumi Ala Resto");
 //            resep1.setPoster("cumigorengtelurasin"); // https://selerasa.com/images/cumigorengtelurasin.png
             resep1.setPoster("https://selerasa.com/images/cumigorengtelurasin.png");
-            resep1.setSummary("Hidangan ini akan cukup mudah untuk anda olah dan dipraktikan di rumah. Betapa tidak, resep kali ini telah kami rangkum sesederhana mungkin sehingga mampu memberikan sajian yang mudah untuk ditiru.");
+            resep1.setSummary("Hidangan ini akan cukup mudah untuk anda olah dan dipraktikan di rumah. " +
+                    "Betapa tidak, resep kali ini telah kami rangkum sesederhana mungkin sehingga mampu memberikan sajian " +
+                    "yang mudah untuk ditiru.");
             resep1.setDetail("Waktu Memasak\n" +
                     "\n" +
                     "Persiapan : 15 menit\n" +
@@ -51,13 +53,13 @@ public class MainActivity extends AppCompatActivity {
                     "500 gram cumi\n" +
                     "minyak goreng untuk menggoreng\n" +
                     "1/2 sendok makan air jeruk nipis\n" +
-                    "3/4 sendok teh garam\n" +
+                    "3/4 sendok teh garam\n\n" +
                     "Bahan Pelapis:\n" +
                     "50 gram tepung terigu\n" +
                     "1/4 sendok teh garam\n" +
                     "50 gram maizena\n" +
                     "25 gram tepung sagu\n" +
-                    "1/4 sendok teh merica\n" +
+                    "1/4 sendok teh merica\n\n" +
                     "Bahan Pencelup:\n" +
                     "\n" +
                     "150 ml air es\n" +
@@ -78,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                     "Bila sudah bersih dan selesai, silahkan ambil dan masukkan kembali kedalam baskom. Selanjutnya, buang air yang masih menggenang lalu sisihkan dalam wadah dan tiriskan.\n" +
                     "Dalam baskom, silahkan bumbui cumi dengan mengguankan air jeruk nipis. Lalu taburi dengan menggunakan garam secara merata. Kemudian aduk-aduk sampai semua bahan ini tercampur dan teraduk.\n" +
                     "Cara diatas dilakukan agar bau amis pada cumi menjadi lebih berkurang secara merata. Untuk itu, sisihkan sementara sampai meresap selama kurang lebih 15 menit.\n" +
-                    "Cara Membuat Cumi Goreng Telur Asin yang Sedap:\n" +
+                    "\nCara Membuat Cumi Goreng Telur Asin yang Sedap:\n" +
                     "\n" +
                     "Bila bahan sajian diatas sudah dicampur dan diaduk secara merata. Selanjutnya kita akan buat cumi krispi dan digoreng.\n" +
                     "Untuk itu, kita akan buat terlebih dahulu bahan pelapis untuk membuat sajian cumi kali ini. Caranya, silahkan aduk secara merata tepung terigu bersama dengan tepung sagu, merica dan juga garam secara merata. Lalu tambahkan tepung mazeina kedalamnya. Kemudian aduk-aduk kembali sampai semua bahan tercampur secara merata.\n" +
@@ -97,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
 //            resep2.setPoster("dendengkering"); // https://selerasa.com/images/daging/dendeng-kerings.jpg
             resep2.setPoster("https://selerasa.com/images/daging/dendeng-kerings.jpg");
             resep2.setSummary("Sajian dendeng sapi kering adalah salah satu sajian makanan dari daging yang enak.\n" +
-                    "Hidangan ini juga cukup praktis dibuat dan bisa diawetkan dalam lemari es untuk beberapa waktu, sehingga ketika anda ingin menyantap sajian ini suatu hari, anda dapat mengolahnya dengan cara menggoreng saja hidangan dendeng yang sudah anda buat.");
+                    "Hidangan ini juga cukup praktis dibuat dan bisa diawetkan dalam lemari es untuk beberapa waktu.");
             resep2.setDetail("Waktu Memasak\n" +
                     "\n" +
                     "Persiapan: 40 menit\n" +
@@ -127,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
                     "300 gr gula merah\n" +
                     "Air kaldu dari rebusan daging\n" +
                     "1 liter air untuk merebus daging\n" +
-                    "Cara Membuat Dendeng Daging Sapi Kering Enak dan Empuk\n" +
+                    "\nCara Membuat Dendeng Daging Sapi Kering Enak dan Empuk\n" +
                     "\n" +
                     "Cara Mengolah Daging Sapi Sebelum Diberikan Bumbu:\n" +
                     "\n" +
@@ -135,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
                     "Setelah selesai memotong-motong daging, selanjutnya silahkan masukan potongan daging kedalam wadah atau mangkuk berukuran besar.\n" +
                     "Siapkan talenan atau berikan alas yang bersih dibagian bawah daging, kemudian ambil pemukul daging dan pipihkan daging dengan menggunakan pemukul hingga daging menjadi bentuk pipih.\n" +
                     "Setelah dipipihkan, masukkan kembali daging kedalam wadah atau mangkuk dan sisihkan sementara sebelum kita olah dan dibumbui dengan rempah.\n" +
-                    "Cara Membuat Dendeng Daging Sapi Kering:\n" +
+                    "\nCara Membuat Dendeng Daging Sapi Kering:\n" +
                     "\n" +
                     "Siapkan panci, berikan air secukupnya dan masukkan potongan daging kedalam panci tersebut kemudian masukkan bawang putih dan rebus daging hingga teksturnya menjadi lebih empuk dan hampir matang serta kuah rebusan daging menjadi menyusut lebih sedikit.\n" +
                     "Selanjutnya, silahkan haluskan semua bumbu hingga bumbu benar-benar halus secara merata.\n" +
@@ -144,6 +146,115 @@ public class MainActivity extends AppCompatActivity {
                     "Selesai didiamakan selama waktu yang telah ditentukan, sekarang jemur daging dibawah terik sinar matahari sampai dendeng daging menjadi benar-benar kering secara merata dan tidak ada kandungan air pada daging.\n" +
                     "Setelah daging kering dari jemuran, sekarang siapkan minyak diatas wajan yang panas dan tunggu hingga minyak panas. Kemudian goreng dendeng hingga matang, jangan dulu membalikan dendeng, biarkan terlebih dahulu hingga kering dan baru balikan.");
             listResep.add(resep2);
+
+            resep3.setJudul(" Ikan Jambal Roti");
+            resep3.setPoster("https://selerasa.com/images/ikan/ikan-jambal-roti-tahu-kering.jpg");
+            resep3.setSummary("Dengan racikan bumbu special dan komposisinya yang pas, maka anda akan dengan mudah membuat sajian ini. Inilah dia resep membuat ikan jambal roti masak tahu kering pedas.");
+            resep3.setDetail("Waktu Memasak\n" +
+                    "\n" +
+                    "Persiapan: 25 menit\n" +
+                    "\n" +
+                    "Memasak: 45 menit\n" +
+                    "\n" +
+                    "Total: 70 menit\n" +
+                    "\n" +
+                    "Jumlah Porsi\n" +
+                    "\n" +
+                    "6 Porsi\n" +
+                    "\n" +
+                    "Bahan-Bahan yang Diperlukan Untuk Membuat Ikan Jambal Roti Masak Tahu Kering Pedas yang Asli Enak dan Gurih\n" +
+                    "\n" +
+                    "Bahan dan Bumbu Ikan:\n" +
+                    "\n" +
+                    "300 gram ikan jambal\n" +
+                    "200 gram tahu coklat\n" +
+                    "2 lembar daun salam\n" +
+                    "2 cm lengkuas, dimemarkan\n" +
+                    "1/2 sendok teh gula pasir\n" +
+                    "1 sendok teh jeruk nipis\n" +
+                    "150 ml air\n" +
+                    "3 lembar daun jeruk, dibuang tulang daunnya\n" +
+                    "2 sendok makan minyak, untuk menumis\n" +
+                    "\nBumbu yang Dicincang Kasar:\n" +
+                    "\n" +
+                    "5 butir bawang merah\n" +
+                    "7 buah cabai merah besar\n" +
+                    "3 siung bawang putih\n" +
+                    "2 buah cabai rawit merah\n" +
+                    "3 buah cabai merah keriting\n" +
+                    "\n" +
+                    "Tips Mempersiapkan Bahan-Bahan Sebelum Dimasak:\n" +
+                    "\n" +
+                    "Pertama, kita akan bersihkan dan persiapkan terlebih dahulu ikan jambal roti yang sudah anda dapatkan. Kita cuci bersih terlebih dahulu ikan jambal dengan menggunakan air yang mengalir dan pastikan jika anda membersihkan kotoran pada ikan secara merata.\n" +
+                    "Selanjutnya, potong-potong ikan jambal yang berukuran besar menjadi bentuk kotak kecil sesuai dengan ukuran yang anda inginkan.\n" +
+                    "Kemudian, rendam terlebih dahulu ikan asin jambal pada mangkuk dengan menggunakan air bersih. Hal ini difungsikan untuk menghilangkan kelebihan garam pada ikan. Diamkan selama kurang lebih 10 menit.\n" +
+                    "Setelah 10 menit, goreng ikan jambal pada wajan yang diberikan minyak goreng dan goreng ikan hingga matang secara merata. Angkat ikan dan sisihkan sementara.\n" +
+                    "Sekarang kita persiapkan tahu coklat. Ambil tahu coklat yang sudah anda beli dan potong tahu menjadi dua bagian.\n" +
+                    "Selanjutnya siapkan kembali wajan dan tuangkan minyak kedalamnya. Gunakan minyak ini untuk menggoreng tahu coklat hingga kering dan krispi namun tidak gosong.\n" +
+                    "Angkat tahu yang sudah kering dan tiriskan minyaknya terlebih dahulu sebelum kita masak bumbunya.");
+            listResep.add(resep3);
+            resep4.setJudul("Kroket Kentang Isi Sayuran");
+            resep4.setPoster("https://selerasa.com/images/Aneka_Sayur/kentang/02.jpg");
+            resep4.setSummary("Sajian ini begitu sangat menggoda, tidak hanya dijadikan sebagai hidangan di kala makan bersama di keluarga.");
+            resep4.setDetail("Waktu Memasak\n" +
+                    "\n" +
+                    "Persiapan: 45 menit\n" +
+                    "\n" +
+                    "Memasak: 45 menit\n" +
+                    "\n" +
+                    "Total: 90 menit\n" +
+                    "\n" +
+                    "Jumlah Porsi\n" +
+                    "\n" +
+                    "10 Orang\n" +
+                    "Bahan yang Diperlukan Untuk Membuat Sajian Sedap Kroket Kentang Isi Sayuran\n" +
+                    "\n" +
+                    "Bahan Utama\n" +
+                    "\n" +
+                    "250 gram kentang segar, kupas lalu goreng dan haluskan\n" +
+                    "Bawang Putih bubuk secukupnya\n" +
+                    "1 sendok makan tepung terigu\n" +
+                    "1 sendok makan susu bubuk\n" +
+                    "Merica Halus secukupnya\n" +
+                    "Air panas secukupnya\n" +
+                    "1 sendok teh garam\n" +
+                    "Aneka Bahan Isian\n" +
+                    "\n" +
+                    "1 sendok teh gula pasir\n" +
+                    "Garam halus secukupnya\n" +
+                    "Merica bubuk secukupnya\n" +
+                    "100 gram daging sapi giling\n" +
+                    "2 sendok makan Margarine\n" +
+                    "1 sendok makan kecap manis\n" +
+                    "4 siung bawang putih, cincang halus\n" +
+                    "4 butir bawang merah, cincang halus\n" +
+                    "100 gram wortel, potong dadu kemudian rebus sebentar\n" +
+                    "\nLapisan Kroket\n" +
+                    "\n" +
+                    "2 Putih Telur, Kocok\n" +
+                    "Tepung roti secukupnya\n" +
+                    "Minyak goreng secukupnya\n" +
+                    "2 sendok makan tepung terigu\n" +
+                    "\nLangkah dan Cara yang Harus Anda Lakukan Utnuk Megolah Sajian Kroket Kentang Isi Sayuran\n" +
+                    "\n" +
+                    "\nLangkah Pembuatan Isi\n" +
+                    "\n" +
+                    "Siapkan wajan dan panaskan margarine atau mentega kemudian anda lanjutkan dengan menumis beberapa bahan seperti bawang putih dan merah sampai dengan wangi.\n" +
+                    "Setelah wangi anda bisa memasukan daging sapi giling. Aduk sampai sajian tersebut merata.\n" +
+                    "Lanjutkan dengan memasukan bahan isian lainnya dan masak sampai matang.\n" +
+                    "Langkah Pembuatan Kulit\n" +
+                    "\n" +
+                    "Siapkan sebuah wadah dan semua bahan kulit.\n" +
+                    "Lanjutkan dengan mencampur semua bahan sampai menjadi satu.\n" +
+                    "\nLangkah Pembuatan Kroket\n" +
+                    "\n" +
+                    "Ambil adoanan kulit yang sudah anda buat kemudian lanjutkan dengan memipihkan adonan tersebut.\n" +
+                    "Ambil isian yang sudah anda buat kemudian letakan di atas adonan pipih, sesuaikan dengan kulitnya kemudian anda gulung bentuk lonjong memanjang bentuk kroket. Lakukan samapai isian dan adonan habis.\n" +
+                    "Setelah itu, gulingkan kroket tersebut ke dalam tepung terigu, lanjutkan dengan membalut kroket tersebut dengan tepung terigu dan terakhir gulingkan di atas tepung panir.\n" +
+                    "Siapkan wajan dan minyak panas. Setelah panas barulah lanjutkan dengan menggoreng kroket tersebut sampai berwarna kuning kecoklatan dan matang.\n" +
+                    "Setelah matang anda angkat dan tata di atas piring saji.\n" +
+                    "Hidangkan di saat panas dengan hiasan menarik.");
+            listResep.add(resep4);
 
         }
         // TODO 6. Buat Adapter

@@ -55,8 +55,9 @@ public class ResepAdapter extends RecyclerView.Adapter<ResepAdapter.MyViewHolder
         holder.tvJudulResep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, "posisi ada di - " + position, Toast.LENGTH_SHORT).show();
-                Intent pindah = new Intent(context, DetailActivity.class);
+//                test position
+//                Toast.makeText(context, "posisi ada di - " + position, Toast.LENGTH_SHORT).show();
+                Intent pindah = new Intent(context, RincianActivity.class);
 
                 pindah.putExtra("DataJudul",listResep.get(position).getJudul());
                 pindah.putExtra("DataPoster", listResep.get(position).getPoster());
