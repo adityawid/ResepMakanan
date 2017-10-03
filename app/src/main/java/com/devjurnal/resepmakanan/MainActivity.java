@@ -26,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
         listResep = new ArrayList<>();
 
         // TODO 4. Set data ke ResepModel
-
-
         ResepModel resep3 = new ResepModel();
         ResepModel resep4 = new ResepModel();
 

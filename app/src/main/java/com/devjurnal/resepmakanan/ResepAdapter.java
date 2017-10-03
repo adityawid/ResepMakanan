@@ -52,6 +52,7 @@ public class ResepAdapter extends RecyclerView.Adapter<ResepAdapter.MyViewHolder
 
         Glide.with(context).load(listResep.get(position).getPoster()).into(holder.ivPosterResep);
 
+
         holder.tvJudulResep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,6 +66,22 @@ public class ResepAdapter extends RecyclerView.Adapter<ResepAdapter.MyViewHolder
                 context.startActivity(pindah);
             }
         });
+
+        holder.tvDescResep.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                test position
+//                Toast.makeText(context, "posisi ada di - " + position, Toast.LENGTH_SHORT).show();
+                Intent pindah = new Intent(context, RincianActivity.class);
+
+                pindah.putExtra("DataJudul",listResep.get(position).getJudul());
+                pindah.putExtra("DataPoster", listResep.get(position).getPoster());
+                pindah.putExtra("DataDetail", listResep.get(position).getDetail());
+                context.startActivity(pindah);
+            }
+        });
+
+
     }
 
     @Override
@@ -80,12 +97,14 @@ public class ResepAdapter extends RecyclerView.Adapter<ResepAdapter.MyViewHolder
         TextView tvDescResep;
         ImageView ivPosterResep;
 
+
         public MyViewHolder(View itemView) {
             super(itemView);
 
             tvJudulResep =  itemView.findViewById(R.id.tvItemJudul);
             tvDescResep =  itemView.findViewById(R.id.tvItemDesc);
             ivPosterResep = itemView.findViewById(R.id.ivItemPoster);
+
         }
     }
 }

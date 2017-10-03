@@ -10,6 +10,7 @@ public class ResepModel {
     private String Detail;
     private String Summary;
 
+
     public String getSummary() {
         return Summary;
     }
